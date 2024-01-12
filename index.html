@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task04-js</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- EX 1 -->
+    <div class="container">
+        <h2 class="mt-5">Ordenador de Vetor</h2>
+        <div class="form-group">
+          <label for="vectorInput">Digite 10 números separados por vírgula:</label>
+          <input type="text" class="form-control" id="vectorInput" placeholder="Exemplo: 1,2,3,4,5,6,7,8,9,0">
+        </div>
+        <button class="btn btn-primary" onclick="sortVector()">Ordenar</button>
+        <div class="mt-3">
+          <p><strong>Lista de 10 posições:</strong> <span id="originalList01"></span></p>
+          <p><strong>Lista em ordem crescente:</strong> <span id="sortedList"></span></p>
+        </div>
+      </div>
+    
+    <!-- EX 2 -->
+    <div class="container">
+      <h2 class="mt-5">Lista de Números Pares e suas Posições</h2>
+      <div class="form-group">
+        <label for="numberInput">Digite números separados por vírgula (de 1 a 30):</label>
+        <input type="text" class="form-control" id="numberInput" placeholder="Exemplo: 1,2,3,...,30">
+      </div>
+      <button class="btn btn-primary mt-3" onclick="listEvenNumbersAndPositions()">Gerar Lista</button>
+      <div class="mt-3">
+        <p id="evenList"></p>
+      </div>
+    </div>    
+
+    <!-- EX 3 -->
+    <div class="container">
+      <h2 class="mt-5"> Sequência de 8 elementos</h2>
+      <button class="btn btn-primary mt-3" onclick="modifyElements()">Modificar e Exibir Elementos</button>
+      <div class="mt-3">
+          <p><strong>1:</strong> <span id="originalList02"></span></p>
+          <p><strong>2:</strong> <span id="modifiedList"></span></p>
+      </div>
+  </div>
+
+    <!-- EX 4 -->
+    <div class="container">
+      <h2 class="mt-5">Inventário Age of Empires II</h2>
+      <h3>Idade das Trevas</h3>
+      <input type="number" id="darkAgeOuro" placeholder="Ouro" /> sacas
+      <input type="number" id="darkAgePrata" placeholder="Prata" /> sacas
+      <input type="number" id="darkAgeMadeira" placeholder="Madeira" /> sacas
+      <input type="number" id="darkAgePedra" placeholder="Pedra" /> sacas
+      <h3>Idade dos Castelos</h3>
+      <input type="number" id="castleAgeOuro" placeholder="Ouro" /> sacas
+      <input type="number" id="castleAgePrata" placeholder="Prata" /> sacas
+      <input type="number" id="castleAgeMadeira" placeholder="Madeira" /> sacas
+      <input type="number" id="castleAgePedra" placeholder="Pedra" /> sacas
+      <br>
+      <button class="btn btn-primary mt-3" onclick="ageOfEmpiresInventory()">Calcular Inventário</button>
+      <div id="ageOfEmpiresOutput" class="mt-3">
+      </div>
+  </div>  
+
+    <!-- EX 5 -->
+    <div class="container">
+        <h2 class="mt-5">Cardápio de Queijos</h2>
+        <button class="btn btn-primary mt-3" onclick="manageCheeseMenu()">Gerenciar Cardápio</button>
+        <div id="cheeseMenuOutput" class="mt-3">
+        </div>
+    </div>
+
+    <!-- EX 6 -->
+    <div class="container">
+        <h2 class="mt-5">Acervo de Livros da Biblioteca</h2>
+        <button class="btn btn-primary mt-3" onclick="libraryCatalog()">Verificar Acervo</button>
+        <div id="libraryOutput" class="mt-3">
+        </div>
+    </div>
+
+    <!-- EX 7 -->
+    <div class="container">
+        <h2 class="mt-5">Medalhas do Campeonato</h2>
+        <button class="btn btn-primary mt-3" onclick="championshipMedals()">Exibir Medalhas</button>
+        <div id="championshipOutput" class="mt-3">
+        </div>
+    </div>
+
+    <!-- EX 8 -->
+    <div class="container">
+      <h2 class="mt-5">Operações com Conjuntos</h2>
+      <p><strong>Conjunto A:</strong> <span id="setA"></span></p>
+      <p><strong>Conjunto B:</strong> <span id="setB"></span></p>
+      <button class="btn btn-primary mt-3" onclick="performSetOperations()">Calcular Conjuntos</button>
+      <div class="mt-3">
+          <p><strong>União dos Conjuntos:</strong> <span id="unionResult"></span></p>
+          <p><strong>Interseção dos Conjuntos:</strong> <span id="intersectionResult"></span></p>
+          <p><strong>Diferença dos Conjuntos:</strong> <span id="differenceResult"></span></p>
+      </div>
+  </div>
+
+    <!-- EX 9 -->
+    <div class="container">
+        <h2 class="mt-5">Pizzaria Gula - Relatório Diário</h2>
+        <button class="btn btn-primary mt-3" onclick="gerarRelatorio(pedidos)">Gerar Relatório</button>
+        <div class="mt-3">
+            <p><strong>Pedidos de pizza:</strong> <span id="pedidosPizza"></span></p>
+            <p><strong>Clientes que pediram refrigerante:</strong> <span id="clientesRefrigerante"></span></p>
+            <p><strong>Clientes que pediram suco:</strong> <span id="clientesSuco"></span></p>
+            <p><strong>Clientes que pediram cerveja:</strong> <span id="clientesCerveja"></span></p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
