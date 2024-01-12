@@ -12,7 +12,7 @@ function sortVector() {
     });
 
     document.getElementById('sortedList').textContent = vector.join(',');
-  }
+}
   
   // EX 2
   function listEvenNumbersAndPositions() {
